@@ -3,7 +3,7 @@
 	"version": "1.0.0",
 	"description": "Build a bot that uses cronjob to post",
 	"main": "index.js",
-	"repository": "git@github.com:bskybots/bsky-cronbot.git",
+	"repository": "git@github.com:bskybot/bsky-cronbot.git",
 	"author": "bskybot <bot@eineseite.at>",
 	"license": "MIT",
 	"scripts": {
