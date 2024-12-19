@@ -1,0 +1,20 @@
+{
+	"name": "bsky-cronbot",
+	"version": "1.0.0",
+	"description": "Build a bot that uses cronjob to post",
+	"main": "index.js",
+	"repository": "git@github.com:bskybots/bsky-cronbot.git",
+	"author": "bskybots <bot@eineseite.at>",
+	"license": "MIT",
+	"scripts": {
+		"start": "ts-node src/index.ts",
+		"build": "tsc"
+	},
+	"dependencies": {
+		"@atproto/api": "^0.13.21",
+		"@types/node": "^22.10.2",
+		"cron": "^3.3.1",
+		"ts-node": "^10.9.2",
+		"typescript": "^5.7.2"
+	}
+}
