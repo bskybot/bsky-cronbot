@@ -15,9 +15,6 @@ async function main(): Promise<void> {
     agent.post({text});
 }
 
-// Run this on a cron job
-const scheduleExpression = '12 13 * * *';
-
 const job = new CronJob(bot.cronJob.scheduleExpression, main, bot.cronJob.callback, bot.cronJob.startAutomatically, bot.cronJob.timeZone); 
 
 job.start();
