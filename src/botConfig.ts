@@ -1,4 +1,4 @@
-import { CronBot } from "./types/cronbot";
+import { CronBot } from "./cronbot";
 
 export const bot: CronBot = {
     identifier: "[HANDLE]",
