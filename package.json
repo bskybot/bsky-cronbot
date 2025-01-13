@@ -11,10 +11,10 @@
 		"build": "tsc"
 	},
 	"dependencies": {
-		"@atproto/api": "^0.13.21",
-		"@types/node": "^22.10.2",
-		"cron": "^3.3.1",
+		"@atproto/api": "^0.13.26",
+		"@types/node": "^22.10.5",
+		"cron": "^3.5.0",
 		"ts-node": "^10.9.2",
-		"typescript": "^5.7.2"
+		"typescript": "^5.7.3"
 	}
 }
