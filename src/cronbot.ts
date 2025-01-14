@@ -1,3 +1,5 @@
+import { AtpAgent } from "@atproto/api";
+
 type Cron = {
     scheduleExpression: string;
     callback: (() => void) | null;
@@ -9,5 +11,5 @@ export type CronBot = {
     identifier: string;
     password: string;
     cronJob: Cron;
-    getMessage: () => Promise<string>;
+    cronAction: (agent: AtpAgent) => Promise<void>;
 }

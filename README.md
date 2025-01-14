@@ -14,14 +14,16 @@ export const bot: CronBot = {
         startAutomatically: true,
         timeZone: "Europe/Vienna"
     },
-    getMessage: async () => {
+    cronAction: async (agent: AtpAgent) => {
+        // implement any logic you want here to be repeated at the scheduledExpression
         const text = "implement logic to return a string";
-        return text;
+        console.info(new Date, `Post cronbot ${bot.identifier}: ${text}`)
+        agent.post({text});
     }
 }
 ```
 
-## Install & Build & run##
+## Install & Build & Run ##
 ```bash
 pnpm i
 ```

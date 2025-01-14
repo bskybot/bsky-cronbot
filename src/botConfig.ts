@@ -1,3 +1,4 @@
+import { AtpAgent } from "@atproto/api";
 import { CronBot } from "./cronbot";
 
 export const bot: CronBot = {
@@ -9,8 +10,9 @@ export const bot: CronBot = {
         startAutomatically: true,
         timeZone: "Europe/Vienna"
     },
-    getMessage: async () => {
+    cronAction: async (agent: AtpAgent) => {
         const text = "implement logic to return a string";
-        return text;
+        console.info(new Date, `Post cronbot ${bot.identifier}: ${text}`)
+        agent.post({text});
     }
 }

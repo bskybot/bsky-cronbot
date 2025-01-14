@@ -1,11 +1,11 @@
-import { BskyAgent } from '@atproto/api';
+import { AtpAgent } from '@atproto/api';
 import { CronJob } from 'cron';
 import { bot } from './botConfig';
 
 const service = "https://bsky.social";
 
 
-const agent = new BskyAgent({service});
+const agent = new AtpAgent({service});
 console.info(new Date, `Initialize cronbot ${bot.identifier}`);
 
 async function main(): Promise<void> {
@@ -14,9 +14,7 @@ async function main(): Promise<void> {
             await agent.login({identifier: bot.identifier, password: bot.password});
             console.info(new Date, `Login cronbot ${bot.identifier}`)
         }
-        const text = await bot.getMessage();
-        console.info(new Date, `Post cronbot ${bot.identifier}: ${text}`)
-        agent.post({text});
+        await bot.cronAction(agent);
     } catch (e) {
         console.warn(new Date, `An error occured with cronbot ${bot.identifier}: ${e}`);
     }
