@@ -1,25 +1,24 @@
-import { AtpAgent } from '@atproto/api';
-import { CronJob } from 'cron';
-import { bot } from './botConfig';
+import { CronBot, useCronBotAgent } from "bskybot";
 
-const service = "https://bsky.social";
-
-
-const agent = new AtpAgent({service});
-console.info(new Date, `Initialize cronbot ${bot.identifier}`);
-
-async function main(): Promise<void> {
-    try {
-        if(!agent.session) {
-            await agent.login({identifier: bot.identifier, password: bot.password});
-            console.info(new Date, `Login cronbot ${bot.identifier}`)
-        }
-        await bot.cronAction(agent);
-    } catch (e) {
-        console.warn(new Date, `An error occured with cronbot ${bot.identifier}: ${e}`);
+const bot: CronBot = {
+    username: "USERNAME",
+    identifier: "[HANDLE]",
+    password: "use app password!",
+    service: "https://bsky.social",
+    cronJob: {
+        scheduleExpression: "* * * * *",
+        callback: null,
+        timeZone: "Europe/Vienna"
+    },
+    action: async (agent) => {
+        const text = "implement logic to return a string";
+        console.info(new Date, `Post cronbot ${bot.identifier}: ${text}`)
+        agent.post({text});
     }
 }
 
-const job = new CronJob(bot.cronJob.scheduleExpression, main, bot.cronJob.callback, bot.cronJob.startAutomatically, bot.cronJob.timeZone); 
+const run = async (): Promise<void> => {
+    useCronBotAgent(bot);
+}
 
-job.start();
+run();

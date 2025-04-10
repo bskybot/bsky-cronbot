@@ -8,15 +8,12 @@ importers:
 
   .:
     dependencies:
-      '@atproto/api':
-        specifier: ^0.13.26
-        version: 0.13.26
       '@types/node':
         specifier: ^22.10.5
         version: 22.10.5
-      cron:
-        specifier: ^3.5.0
-        version: 3.5.0
+      bskybot:
+        specifier: ^1.2.1
+        version: 1.2.1
       ts-node:
         specifier: ^10.9.2
         version: 10.9.2(@types/node@22.10.5)(typescript@5.7.3)
@@ -26,20 +23,20 @@ importers:
 
 packages:
 
-  '@atproto/api@0.13.26':
-    resolution: {integrity: sha512-W3zsgCdEuyvP2Qj3Np858kwjv5/pAd/pX3Z5HtLKIYt8uQottAZkuH+2dV+WRovgxHekyCyFJK07NuD4TQ9WMQ==}
+  '@atproto/api@0.14.21':
+    resolution: {integrity: sha512-hCIcjks/snscH3ZtZFoicQN2hRM5MpWQUvvzyIa265XQ2vSv5BP+gsQVIHWtYKt+gzwq1E7jY4us6c4N7fsLlQ==}
 
-  '@atproto/common-web@0.3.2':
-    resolution: {integrity: sha512-Vx0JtL1/CssJbFAb0UOdvTrkbUautsDfHNOXNTcX2vyPIxH9xOameSqLLunM1hZnOQbJwyjmQCt6TV+bhnanDg==}
+  '@atproto/common-web@0.4.1':
+    resolution: {integrity: sha512-Ghh+djHYMAUCktLKwr2IuGgtjcwSWGudp+K7+N7KBA9pDDloOXUEY8Agjc5SHSo9B1QIEFkegClU5n+apn2e0w==}
 
-  '@atproto/lexicon@0.4.5':
-    resolution: {integrity: sha512-fljWqMGKn+XWtTprBcS3F1hGBREnQYh6qYHv2sjENucc7REms1gtmZXSerB9N6pVeHVNOnXiILdukeAcic5OEw==}
+  '@atproto/lexicon@0.4.10':
+    resolution: {integrity: sha512-uDbP20vetBgtXPuxoyRcvOGBt2gNe1dFc9yYKcb6jWmXfseHiGTnIlORJOLBXIT2Pz15Eap4fLxAu6zFAykD5A==}
 
-  '@atproto/syntax@0.3.1':
-    resolution: {integrity: sha512-fzW0Mg1QUOVCWUD3RgEsDt6d1OZ6DdFmbKcDdbzUfh0t4rhtRAC05KbZYmxuMPWDAiJ4BbbQ5dkAc/mNypMXkw==}
+  '@atproto/syntax@0.4.0':
+    resolution: {integrity: sha512-b9y5ceHS8YKOfP3mdKmwAx5yVj9294UN7FG2XzP6V5aKUdFazEYRnR9m5n5ZQFKa3GNvz7de9guZCJ/sUTcOAA==}
 
-  '@atproto/xrpc@0.6.6':
-    resolution: {integrity: sha512-umXEYVMo9/pyIBoKmIAIi64RXDW9tSXY+wqztlQ6I2GZtjLfNZqmAWU+wADk3SxUe54mvjxxGyA4TtyGtDMfhA==}
+  '@atproto/xrpc@0.6.12':
+    resolution: {integrity: sha512-Ut3iISNLujlmY9Gu8sNU+SPDJDvqlVzWddU8qUr0Yae5oD4SguaUFjjhireMGhQ3M5E0KljQgDbTmnBo1kIZ3w==}
 
   '@cspotcode/source-map-support@0.8.1':
     resolution: {integrity: sha512-IchNf6dN4tHoMFIn/7OE8LWZ19Y6q/67Bmf6vnGREv8RSbBVb9LPJxEcnwrcwX6ixSvaiGoomAUvu4YSxXrVgw==}
@@ -67,8 +64,8 @@ packages:
   '@tsconfig/node16@1.0.4':
     resolution: {integrity: sha512-vxhUy4J8lyeyinH7Azl1pdd43GJhZH/tP2weN8TntQblOY+A0XbT8DJk1/oCPuOOyg/Ja757rG0CgHcWC8OfMA==}
 
-  '@types/luxon@3.4.2':
-    resolution: {integrity: sha512-TifLZlFudklWlMBfhubvgqTXRzLDI5pCbGa4P8a3wPyUQSW+1xQ5eDsreP9DWHX3tjq1ke96uYG/nwundroWcA==}
+  '@types/luxon@3.6.2':
+    resolution: {integrity: sha512-R/BdP7OxEMc44l2Ex5lSXHoIXTB2JLNa3y2QISIbr58U/YcsffyQrYW//hZSdrfxrjRZj3GcUoxMPGdO8gSYuw==}
 
   '@types/node@22.10.5':
     resolution: {integrity: sha512-F8Q+SeGimwOo86fiovQh8qiXfFEh2/ocYv7tU5pJ3EXMSSxk1Joj5wefpFK2fHTf/N6HKGSxIDBT9f3gCxXPkQ==}
@@ -88,11 +85,15 @@ packages:
   await-lock@2.2.2:
     resolution: {integrity: sha512-aDczADvlvTGajTDjcjpJMqRkOF6Qdz3YbPZm/PyW6tKPkx2hlYBzxMhEywM/tU72HrVZjgl5VCdRuMlA7pZ8Gw==}
 
+  bskybot@1.2.1:
+    resolution: {integrity: sha512-A9m/8uCc24KyWxq4dmutPgkVG/KRAfzeBeFPYpnrImNdM1XAWaExLy9o0Pm+letZpvYfW5eFdwC0zZSS4C2DuA==}
+
   create-require@1.1.1:
     resolution: {integrity: sha512-dcKFX3jn0MpIaXjisoRvexIJVEKzaq7z2rZKxf+MSr9TkdmHmsU4m2lcLojrj/FHl8mk5VxMmYA+ftRkP/3oKQ==}
 
-  cron@3.5.0:
-    resolution: {integrity: sha512-0eYZqCnapmxYcV06uktql93wNWdlTmmBFP2iYz+JPVcQqlyFYcn1lFuIk4R54pkOmE7mcldTAPZv6X5XA4Q46A==}
+  cron@4.1.4:
+    resolution: {integrity: sha512-PpAGyOyWZuGT3I50iGKeyZzNsDn/hp2AzRGUzXIlmnwC+bHZFTs1itnQKx171FeocEej+zTYV2JIgQM8M46LaQ==}
+    engines: {node: '>=18.x'}
 
   diff@4.0.2:
     resolution: {integrity: sha512-58lmxKSA4BNyLz+HHMUzlOEpg09FV+ev6ZMe3vJihgdxzgcwZ8VoEEPmALCZG9LmqfVoNMMKpttIYTVG6uDY7A==}
@@ -104,8 +105,8 @@ packages:
   iso-datestring-validator@2.2.2:
     resolution: {integrity: sha512-yLEMkBbLZTlVQqOnQ4FiMujR6T4DEcCb1xizmvXS+OxuhwcbtynoosRzdMA69zZCShCNAbi+gJ71FxZBBXx1SA==}
 
-  luxon@3.5.0:
-    resolution: {integrity: sha512-rh+Zjr6DNfUYR3bPwJEnuwDdqMbxZW7LOQfUN4B54+Cl+0o5zaU9RJ6bcidfDtC1cWCZXQ+nvX8bf6bAji37QQ==}
+  luxon@3.6.1:
+    resolution: {integrity: sha512-tJLxrKJhO2ukZ5z0gyjY1zPh3Rh88Ej9P7jNrZiHMUXHae1yvI2imgOZtL1TO8TW6biMMKfTtAOoEJANgtWBMQ==}
     engines: {node: '>=12'}
 
   make-error@1.3.6:
@@ -146,6 +147,18 @@ packages:
   v8-compile-cache-lib@3.0.1:
     resolution: {integrity: sha512-wa7YjyUGfNZngI/vtK0UHAN+lgDCxBPCylVXGp0zu59Fz5aiGtNXaq3DhIov063MorB+VfufLh3JlF2KdTK3xg==}
 
+  ws@8.18.1:
+    resolution: {integrity: sha512-RKW2aJZMXeMxVpnZ6bck+RswznaxmzdULiBr6KY7XkTnW8uvt0iT9H5DkHUChXrc+uurzwa0rVI16n/Xzjdz1w==}
+    engines: {node: '>=10.0.0'}
+    peerDependencies:
+      bufferutil: ^4.0.1
+      utf-8-validate: '>=5.0.2'
+    peerDependenciesMeta:
+      bufferutil:
+        optional: true
+      utf-8-validate:
+        optional: true
+
   yn@3.1.1:
     resolution: {integrity: sha512-Ux4ygGWsu2c7isFWe8Yu1YluJmqVhxqK2cLXNQA5AcC3QfbGNpM7fu0Y8b/z16pXLnFxZYvWhd3fhBY9DLmC6Q==}
     engines: {node: '>=6'}
@@ -155,37 +168,37 @@ packages:
 
 snapshots:
 
-  '@atproto/api@0.13.26':
+  '@atproto/api@0.14.21':
     dependencies:
-      '@atproto/common-web': 0.3.2
-      '@atproto/lexicon': 0.4.5
-      '@atproto/syntax': 0.3.1
-      '@atproto/xrpc': 0.6.6
+      '@atproto/common-web': 0.4.1
+      '@atproto/lexicon': 0.4.10
+      '@atproto/syntax': 0.4.0
+      '@atproto/xrpc': 0.6.12
       await-lock: 2.2.2
       multiformats: 9.9.0
       tlds: 1.255.0
       zod: 3.24.1
 
-  '@atproto/common-web@0.3.2':
+  '@atproto/common-web@0.4.1':
     dependencies:
       graphemer: 1.4.0
       multiformats: 9.9.0
       uint8arrays: 3.0.0
       zod: 3.24.1
 
-  '@atproto/lexicon@0.4.5':
+  '@atproto/lexicon@0.4.10':
     dependencies:
-      '@atproto/common-web': 0.3.2
-      '@atproto/syntax': 0.3.1
+      '@atproto/common-web': 0.4.1
+      '@atproto/syntax': 0.4.0
       iso-datestring-validator: 2.2.2
       multiformats: 9.9.0
       zod: 3.24.1
 
-  '@atproto/syntax@0.3.1': {}
+  '@atproto/syntax@0.4.0': {}
 
-  '@atproto/xrpc@0.6.6':
+  '@atproto/xrpc@0.6.12':
     dependencies:
-      '@atproto/lexicon': 0.4.5
+      '@atproto/lexicon': 0.4.10
       zod: 3.24.1
 
   '@cspotcode/source-map-support@0.8.1':
@@ -209,7 +222,7 @@ snapshots:
 
   '@tsconfig/node16@1.0.4': {}
 
-  '@types/luxon@3.4.2': {}
+  '@types/luxon@3.6.2': {}
 
   '@types/node@22.10.5':
     dependencies:
@@ -225,12 +238,22 @@ snapshots:
 
   await-lock@2.2.2: {}
 
+  bskybot@1.2.1:
+    dependencies:
+      '@atproto/api': 0.14.21
+      '@atproto/lexicon': 0.4.10
+      cron: 4.1.4
+      ws: 8.18.1
+    transitivePeerDependencies:
+      - bufferutil
+      - utf-8-validate
+
   create-require@1.1.1: {}
 
-  cron@3.5.0:
+  cron@4.1.4:
     dependencies:
-      '@types/luxon': 3.4.2
-      luxon: 3.5.0
+      '@types/luxon': 3.6.2
+      luxon: 3.6.1
 
   diff@4.0.2: {}
 
@@ -238,7 +261,7 @@ snapshots:
 
   iso-datestring-validator@2.2.2: {}
 
-  luxon@3.5.0: {}
+  luxon@3.6.1: {}
 
   make-error@1.3.6: {}
 
@@ -273,6 +296,8 @@ snapshots:
   undici-types@6.20.0: {}
 
   v8-compile-cache-lib@3.0.1: {}
+
+  ws@8.18.1: {}
 
   yn@3.1.1: {}
 
